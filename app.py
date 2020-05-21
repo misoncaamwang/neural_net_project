@@ -3,6 +3,14 @@ import neat
 import time
 import os
 import random
+
+'''
+What are neural networks ?
+Input Layer
+Hidden Layer
+Output Layer
+'''
+
 pygame.font.init()
 
 WIN_WIDTH = 500
@@ -19,7 +27,6 @@ BASE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs", "base
 BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs", "bg.png")))
 
 STAT_FONT = pygame.font.SysFont("ariel", 50)
-
 
 class Bird:
     IMGS = BIRD_IMGS
@@ -115,7 +122,7 @@ class Bird:
         """
         return pygame.mask.from_surface(self.img)
     
-class Pipe():
+class Pipe:
     """
     represents a pipe object
     """
